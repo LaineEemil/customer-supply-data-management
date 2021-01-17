@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet type=text/css href=styles.css>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>LightenYourLife rekisteröityminen käyttäjäksi</title>
+  </head>
+  <p style="color: green">  Asiakkaan lisäys onnistui!</p>
+  <p style="color: green"> Lisää toinen asiakas tai palaa takaisin etusivulle</p>
+    <form action="lisaa_asiakas.php" method="POST">
+      <fieldset>
+        <legend>Lisää asiakas</legend>
+        <label for="nimi">Koko nimi: </label> <br>
+        <input type="text" name="nimi" /> <br>
+        <label for="osoite">Kotiosoite: </label> <br>
+        <input type="text" name="osoite" /> <br>
+        <label for="postiosoite">Postiosoite: </label> <br>
+        <input type="number" name="postiosoite" /> <br>
+        <label for="puhnro">Puhelinnumero: </label> <br>
+        <input type="text" name="puhnro" /> <br>
+        <label for="sposti">Sähköposti: </label> <br>
+        <input type="text" name="sposti" /> <br> <br>
+        <input type="submit" value="Lisää asiakas" />
+      </fieldset>
+    </form>
+    <footer>
+    <p><a href="lisaa_asiakas.html">Poista tiedot</a></p>
+    <p><a href="etusivu.php">Takaisin etusivulle</a></p>
+    </footer>
+  </body>
+</html>
+  
+  

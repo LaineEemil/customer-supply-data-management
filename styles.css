@@ -1,0 +1,84 @@
+form { 
+    font-size: 20px;
+}
+#nappi {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+#poistonappi {
+    background-color: rgb(230, 140, 140);
+    cursor: pointer;
+}
+body {
+    background-color: #d0e4fe;
+    background-image: url(pics/lightning-bolt.jpg);
+    background-position: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h3, p, li, ul, a, label {
+    color: white;
+}
+
+#keltanappi {
+    cursor: pointer;
+    background-color:yellow;
+}
+
+#keltavihreanappi {
+    cursor: pointer;
+    background-color:yellowgreen;
+}
+
+#onnistui {
+    color: green;
+}
+
+#epaonnistui {
+    color: rgb(230, 140, 140);
+}
+  
+.navbar {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navbar #on:hover {
+    background-color: red;
+}
+
+#on {
+    border-radius: 10px;
+    background-color: #333;
+}
+
+
+#off {
+    cursor: default;
+    border-top: 10px;
+}
+
+#off a:hover {
+    background-color: #333;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}

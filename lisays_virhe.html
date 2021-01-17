@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet type=text/css href=styles.css>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <p style="color: red"> Asiakkaan lisäys epäonnistui!</p>
+  <p style="color: red"> Tarkista kentät!</p>
+  <body>
+	<p></p>
+    <form action="lisaa_asiakas.php" method="POST">
+      <fieldset>
+        <legend>Lisää asiakas</legend>
+        <label for="nimi">Nimi:</label> <br>
+        <input type="text" name="nimi" /> <br>
+        <label for="osoite">Osoite:</label> <br>
+        <input type="text" name="osoite" /> <br>
+        <label for="postiosoite">Postiosoite:</label> <br>
+        <input type="text" name="postiosoite" /> <br>
+		    <label for="puhnro">Puhnro:</label> <br>
+		    <input type="text" name="puhnro" /> <br>
+		    <label for="sposti">Sposti:</label> <br>
+		    <input type="text" name="sposti" /> <br> <br>
+        <input type="submit" value="Lisää asiakas" />
+      </fieldset>
+    </form>
+    <footer>
+	<p><a href="lisaa_asiakas.html">Peruuta</a></p>
+    <p><a href="etusivu.php">Takaisin etusivulle</a></p>
+    </footer>
+  </body>
+</html>
+

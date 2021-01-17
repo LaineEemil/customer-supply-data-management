@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet type=text/css href=styles.css>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lisää työkohde</title>
+  </head>
+  <body>
+    <form action="uusi.php" method="POST">
+      <fieldset>
+        <legend>Lisää työkohde</legend>
+        <input type="hidden" id="atunnus" name="atunnus"/>  <br>
+        <label for="kuvaus">Kuvaus: </label> <br>
+        <textarea rows = "5" cols = "60" name="kuvaus"> </textarea>  <br>
+        <label for="osoite">Osoite: </label> <br>
+        <input type="text" name="osoite" />  <br>
+        <label for="postiosoite">Postiosoite : </label> <br>
+		    <input type="text" name="postiosoite" /><br>
+		    <label for="suunnittelualennus">Suunnittelualennus : </label> <br>
+		    <input type="number" name="suunnittelualennus" value=0 set=. /> % <br>
+		    <label for="tyoalennus">Työalennus : </label> <br>
+        <input type="number" name="tyoalennus" value=0 set=./> % <br>
+        <label for="aputyoalennus">Aputyöalennus : </label> <br>
+        <input type="number" name="aputyoalennus" value=0 set=./> % <br> <br>
+        <input type="submit" value="Lisää työkohde asiakkaalle" /> <br>
+      </fieldset>
+    </form>
+    <footer>
+    <p><a href="etusivu.php">Takaisin etusivulle</a></p>
+    </footer>
+    <script>
+        document.getElementById("atunnus").value = document.URL.toString().split("=")[1];
+    </script>
+  </body>
+</html>
+

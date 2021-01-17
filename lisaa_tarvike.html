@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet type=text/css href=styles.css>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lisää työkohde</title>
+  </head>
+  <body>
+    <form action="lisaa_tarvike.php" method="POST">
+      <fieldset>
+        <legend>Lisää tarvike tietokantaan</legend>
+        <label for="tuotetunnus">Tuotetunnus: </label> <br>
+        <input type="text" name="tuotetunnus"> </input>  <br>
+
+        <label for="nimi">Nimi: </label> <br>
+        <input type="text" name="nimi" /> <br>
+
+        <label for="kuvaus">Kuvaus: </label> <br>
+        <input type="text" name="kuvaus" /> <br>
+
+        <label for="yksikko">Yksikkö : </label> <br>
+        <select id="yksikko" name="yksikko">
+            <option value="kpl">Kappaletta</option>
+            <option value="m">Metriä</option>
+            <option value="pkt">Pakettia</option>
+          </select> <br>
+        </fieldset>
+          
+        <fieldset>
+        <label for="varastotilanne">Varastotilanne: </label> <br>
+        <input type="number" name="varastotilanne" value="0"/> <br>
+
+        <label for="ostohinta">Ostohinta: </label> <br>
+        <input type="number" name="ostohinta" value="0" step=".01"/> Euroa <br>
+
+        <label for="myyntihinta">Myyntihinta: </label> <br>
+        <input type="number" name="myyntihinta" value="0" step=".01"/> Euroa <br>
+        
+        <label for="alv">ALV: </label> <br>
+        <input type="number" name="alv" value="24"/> % <br> <br>
+
+        <input type="submit" value="Lisää tarvike tietokantaan" /> <br>
+      </fieldset>
+    </form>
+    <footer>
+	<p><a href="lisaa_tarvike.html">Peruuta</a></p>
+    <p><a href="etusivu.php">Takaisin etusivulle</a></p>
+    </footer>
+    <script>
+
+    </script>
+  </body>
+</html>
+
